@@ -1,0 +1,27 @@
+﻿@page
+@model WebApplication7.Pages.RequestModel
+@{
+}
+
+<div>
+    <h1 class="display-4">Welcome user to the CDA Training Web App</h1>
+
+    <p class="text-center">
+        <img alt="" src="https://d1hbpr09pwz0sk.cloudfront.net/logo_url/critical-design-associates-inc-ab9cc379" class="center"/>
+    </p>
+
+    <p class="text-center">
+        <input id="Button1" type="button" value="Logout" onclick="window.location.href = 'https://localhost:44352/login'" /> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <form method="post" asp-page="Request">
+            <div class="form-group">
+             </div>
+            <p><button type="submit" class="btn btn-primary">Request Network Account</button></p>
+        </form>
+    </p>
+
+
+
+</div>

@@ -1,0 +1,21 @@
+﻿  @page
+@model WebApplication7.Pages.NewAccountModel
+@{
+}
+
+<div class="text-left">
+    
+
+    <form method="post" asp-page="NewAccount">
+        <div class="form-group">
+            <p>Username</p>
+            <p><input asp-for="User" id="Text1" type="text" /></p>  
+            <p>Password</p>
+            <p><input asp-for="Pass1" id="Text2" type="password" /></p>
+            <p>Re-enter Password</p>
+            <p><input asp-for="Pass2" id="Text3" type="password" /></p>
+         </div>
+            <p><button type="submit" class="btn btn-primary">Create Account</button></p>
+    </form>
+
+</div>

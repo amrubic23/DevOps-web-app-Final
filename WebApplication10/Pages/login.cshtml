@@ -1,0 +1,25 @@
+﻿@page
+@model WebApplication7.Pages.HomeModel
+@{
+}
+
+<div class="text-left">
+    <h1 class="display-4">CDA Training Web App Login!</h1>
+
+
+    <form method="post" asp-page="Login">
+        <div class="form-group">
+            <p>Username</p>
+            <p><input asp-for="User" id="Text1" type="text" asp-page-handler="Login"/></p>  
+            <p>Password</p>
+            <p><input asp-for="Pass" id="Text1" type="password" asp-page-handler="Login"/></p>
+         </div>
+            <p><button type="submit" class="btn btn-primary" asp-page-handler="Login">Login</button></p>
+
+
+         <p><button type="submit" class="btn btn-primary" asp-page-handler="Create">Create Account</button></p>
+
+    </form>
+
+
+</div>
